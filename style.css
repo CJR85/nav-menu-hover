@@ -20,6 +20,7 @@
   background: #fff;
   display: flex;
   box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .menu div {
@@ -27,6 +28,7 @@
   font-size: 30px;
   cursor: pointer;
   position: relative;
+  transition: transform 0.5s;
 }
 
 .menu div span {
@@ -38,4 +40,8 @@
   left: 0;
   top: 100%;
   border-bottom: 5px solid #ff5361;
+}
+
+.menu div:hover {
+  transform: translateY(-100%);
 }
